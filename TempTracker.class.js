@@ -15,8 +15,8 @@ var TempTracker = function() {
        console.error('value must be a number'); 
 		}
 
-		collection.push(value);
-		sortedCollection = [...collection.sort()];
+		collection.push(value); 
+		sortedCollection = collection.sort();
   }
 
   this.avg = function() {
