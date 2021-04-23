@@ -9,8 +9,8 @@ var TempTracker = function() {
   }
 
   this.add = function(value) {
-		if(Number(value) === NaN) {
-				const error = new TypeError('value must be a number');
+  if(Number(value) === NaN) {
+    const error = new TypeError('value must be a number');
        console.error('value must be a number'); 
 		}
 
@@ -19,9 +19,9 @@ var TempTracker = function() {
   }
 
   this.avg = function() {
-    let length = collection.length;
-    let sum = 0;
-    collection = [...collection];
+      collection = [...collection];
+      let length = collection.length;
+      let sum = 0;
     collection.forEach((value) => {
           sum += value;
     });
