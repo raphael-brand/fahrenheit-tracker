@@ -12,6 +12,7 @@ var TempTracker = function() {
   }
 
   this.add = function(value) {
+		if(Number(value) === NaN) return
 		if(collection.length == 0) {
 				collection.push(value);
 				return;
