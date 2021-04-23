@@ -5,8 +5,7 @@ var TempTracker = function() {
 
 
   this.track = function() {
-		console.log('tracking ...');
-    console.log(typeof this);
+      console.log(collection);
   }
 
   this.add = function(value) {
@@ -20,11 +19,13 @@ var TempTracker = function() {
   }
 
   this.avg = function() {
-
-    collection.forEach((index, value) => {
-
-      
-		}); 
+    let length = collection.length;
+    let sum = 0;
+    collection = [...collection];
+    collection.forEach((value) => {
+          sum += value;
+    });
+    return (sum/length);
   }
 
   this.highest = function() {
