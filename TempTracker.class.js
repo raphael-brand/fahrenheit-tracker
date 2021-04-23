@@ -2,9 +2,6 @@ var TempTracker = function() {
   var collection = [];
   var updatedCollection = [];
 
-  this.track = this.track.bind(this);
-  this.add = this.add.bind(this);
-
 
   this.track = function() {
 		console.log('tracking ...');
@@ -12,7 +9,7 @@ var TempTracker = function() {
   }
 
   this.add = function(value) {
-		if(Number(value) === NaN) return
+		if(Number(value) === NaN) throw new TypeError('value must be a number');
 		if(collection.length == 0) {
 				collection.push(value);
 				return;
