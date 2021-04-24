@@ -2,8 +2,11 @@ var TempTracker = require('./TempTracker.class.js');
 var TempGenerator = require('./TempGenerator.class.js');
 
 var tracker = new TempTracker();
-tracker.add(13);
+
 tracker.add(10);
+//tracker.add("thisis a test");
+tracker.add(15);
+tracker.add(15);
 tracker.add(15);
 tracker.add(1);
 tracker.track();
